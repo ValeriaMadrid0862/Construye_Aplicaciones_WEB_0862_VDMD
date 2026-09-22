@@ -1,0 +1,111 @@
+<!-- Tipo de documento HTML5 -->
+<!DOCTYPE html>
+
+
+<!-- Raiz del documento, el atributo lang="es" especifica que el idioma principal es español-->
+<html lang="es">
+
+<!--Encabezado el usuario no lo puede visualizar-->
+<head>
+    <!-- Codificacion de caracteres -->
+    <meta charset="UTF-8">
+
+    <!-- Adaptacion a pantallas moviles -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Titulo de la pestana -->
+    <title>Tipos de listas en HTML-Madrid De la Cruz Valeria Dayana - No.0862</title>
+</head> <!--Cierre de encabezado-->
+
+<!-- Abrir el cuerpo del documento -->
+<body>
+
+    <!-- Titulo principal del documento -->
+<h1>Tipos de listas</h1>
+
+<!-- Subtitulo para listas ordenadas -->
+<h2>Listas ordenadas</h2>
+<p>Una lista ordenada es una serie de elementos los cuales tendran una numeracion de acuerdo al numero de elementos.</p>
+
+<!-- Contenedor de lista ordenada (con numeros) -->
+<ol>
+    <!-- Elemento de la lista -->
+    <li>Luna Arias</li>
+    <li>Franco Andrea</li>
+    <li>Granados Evelyn</li>
+</ol>
+
+<!-- Subtitulo para listas no ordenadas -->
+<h2>Listas no ordenadas</h2>
+<p>Las listas no ordenadas no utilizan ninguna numeracion delante de cada item sino un pequeno elemento grafico.</p>
+
+<!-- Contenedor de lista no ordenada (con viñetas) -->
+<ul>
+    <!-- Elemento de la lista -->
+    <li>C</li>
+    <li>C++</li>
+    <li>Python</li>
+</ul>
+
+<!-- Subtitulo para lista de definiciones -->
+<h2>Lista de definiciones</h2>
+<p>Se utiliza para asociar un termino y la definicion del mismo.</p>
+<!-- Contenedor de la lista de definicion -->
+<dl>
+    <!-- Termino a definir -->
+    <dt>C++</dt>
+    <!-- Descripcion o definicion del termino -->
+    <dd>Es un lenguaje de programacion, disenado a mediados de los anos 1980 como extension del lenguaje de programacion C.</dd>
+
+    <!-- Termino a definir -->
+    <dt>Java</dt>
+    <!-- Descripcion o definicion del termino -->
+    <dd>Es un lenguaje de programacion orientado a objetos desarrollado por Sun Microsystems a principios de los 90.</dd>
+
+    <!-- Termino a definir -->
+    <dt>JavaScript</dt>
+    <!-- Descripcion o definicion del termino -->
+    <dd>Es un lenguaje interpretado, es decir que no requiere compilacion, utilizado principalmente en paginas web, con una sintaxis similar al lenguaje de programacion C.</dd>
+</dl>
+
+<!-- Subtitulo para listas anidadas -->
+<h2>Listas anidadas</h2>
+<p>En HTML nos permite insertar una lista dentro de otra lista, se pueden anidar diferentes tipos de lista de acuerdo al requerimiento.</p>
+
+<!-- Lista ordenada principal -->
+<ol>
+    <!-- Primer elemento con lista interna no ordenada -->
+    <li>Argentina
+        <ul>
+            <!-- Elemento de la lista -->
+            <li>Buenos Aires</li>
+            <li>La Plata</li>
+            <li>Mendoza</li>
+        </ul>
+    </li>
+
+    <!-- Segundo elemento con lista interna no ordenada -->
+    <li>Espana
+        <!-- Contenedor de lista no ordenada (con viñetas) -->
+        <ul>
+            <!-- Elemento de la lista -->
+            <li>Barcelona</li>
+            <li>Madrid</li>
+            <li>Sevilla</li>
+        </ul>
+    </li>
+
+    <!-- Tercer elemento con lista interna no ordenada -->
+    <li>Mexico
+        <!-- Contenedor de lista no ordenada (con viñetas) -->
+        <ul>
+            <!-- Elemento de la lista -->
+            <li>Chihuahua</li>
+            <li>Cd. Juarez</li>
+            <li>Hermosillo</li>
+        </ul>
+    </li>
+</ol>
+
+</body> <!-- Cierre del cuerpo del documento -->
+</html> <!-- Cierre definitivo del documento HTML -->
