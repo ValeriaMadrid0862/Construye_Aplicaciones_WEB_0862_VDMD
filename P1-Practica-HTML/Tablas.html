@@ -1,0 +1,153 @@
+<!-- Tipo de documento HTML5 -->
+<!DOCTYPE html>
+
+<!-- Raiz del documento, el atributo lang="es" especifica que el idioma principal es español-->
+<html lang="es">
+
+<!--Encabezado el usuario no lo puede visualizar-->
+<head>
+    <!-- Codificacion de caracteres -->
+    <meta charset="UTF-8">
+
+    <!-- Adaptacion a pantallas moviles -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Titulo de la pestana -->
+    <title>Tablas en HTML-Madrid De la Cruz Valeria Dayana - No.0862</title>
+</head> <!--Cierre de encabezado-->
+
+<!-- El cuerpo aquí va todo el contenido visible de la página web -->
+<body>
+    <!-- Título principal de la página -->
+    <h1>Tipos de tablas</h1>
+    
+    <!-- Parrafo explicativo sencillo -->
+    <p>El objetivo fundamental de las tablas en HTML sera
+        mostrar una serie de datos en forma ordenada,
+        organizado en filas y columnas
+    </p>
+
+    <!-- Otro párrafo introductorio -->
+    <p>Para la creacion de una tabla intervienen diferentes elementos:</p>
+
+    <!-- Contenedor para una lista de definición o glosario -->
+    <dl>
+        <!-- Término a definir (Definition Term): Nombre del elemento -->
+        <dt>Table</dt>
+        <!-- Descripción o explicación del término anterior (Definition Description) -->
+        <dd>
+            Es la marca de comienzo de la tabla. Este elemento requiere
+            la marca de cierre.
+        </dd>
+
+        <!-- Segundo término a definir -->
+        <dt>Tr</dt>
+        <!-- Explicación del segundo término -->
+        <dd>
+            Es la marca de comienzo de una fila. Esta marca debe estar
+            dentro del elemento table
+        </dd>
+
+        <!-- Tercer término a definir -->
+        <dt>Td</dt>
+        <!-- Explicación del tercer término -->
+        <dd>
+            Es la marca de comeinzo de una celda. Esta marca debe estar
+            dentro del elemento tr
+        </dd>
+    </dl>
+
+    <!-- Subtítulo de sección H2 -->
+    <h2>Ejemplo</h2>
+
+    <!-- Etiqueta principal para crear una tabla. El atributo border="1" le dibuja un borde sencillo alrededor -->
+    <table border="1">
+        <!-- "tr"  Crea la primera fila de la tabla -->
+        <tr>
+            <!-- "td" Celda de datos individual. En este caso, la celda izquierda -->
+            <td>Ciudad de Mexico</td>
+            <!-- Segunda celda de datos para la misma fila celda derecha -->
+            <td>9.2 millones</td>
+        </tr>
+        
+        <!-- Segunda fila -->
+        <tr>
+            <td>Guadalajara</td>
+            <td>4.1 millones</td>
+        </tr>
+        
+        <!-- Tercera fila -->
+        <tr>
+            <td>Monterrey</td>
+            <td>3.9 millones</td>
+        </tr>
+    </table>
+
+    <!-- Subtítulo para el segundo ejemplo -->
+    <h2>Tabla con encabezado</h2>
+
+    <!-- Parrafo con un concepto destacado -->
+    <p>La caracteristicas de esta tabla es que se le agrega a las celdas 
+        el encabezado correspondiente, esto solo aplicaria a la primera
+        fila de la tabla con la etiqueta 
+        <!-- 'em' (Emphasis): Pone el texto en cursiva para dar énfasis -->
+        <em>th</em>, las demas filas
+        usarian la etiqueta <em>td</em> con normalidad.
+    </p>
+
+    <table border="1">
+        <!-- Fila especial de encabezados -->
+        <tr>
+            <!-- "th" Igual que un "td", pero resalta el texto como título negrita y centrado -->
+            <th>Ciudad</th>
+            <th>Cantidad de habitantes</th>
+        </tr>
+
+        <!-- Filas normales de contenido -->
+        <tr>
+            <td>Ciudad de Mexico</td>
+            <td>9.2 millones</td>
+        </tr>
+        <tr>
+            <td>Guadalajara</td>
+            <td>4.1 millones</td>
+        </tr>
+        <tr>
+            <td>Monterrey</td>
+            <td>3.9 millones</td>
+        </tr>
+    </table>
+
+    <!-- Subtítulo para el tercer ejemplo -->
+    <h2>Tabla con titulo</h2>
+
+    <p>Para insertar un titulo a la tabla debemos incorporar el elemento caption 
+        inmediatamente despues de abrir la etiqueta <em>table</em>.
+    </p>
+
+    <table border="1">
+        <!-- "caption" Define un título visible y centrado justo arriba de toda la tabla -->
+        <caption>Poblacion de las ciudades mas concurridas de Mexico</caption>
+        
+        <!-- Encabezados de columna -->
+        <tr>
+            <th>Ciudad</th>
+            <th>Cantidad de habitantes</th>
+        </tr>
+
+        <!-- Datos de la tabla -->
+        <tr>
+            <td>Ciudad de Mexico</td>
+            <td>9.2 millones</td>
+        </tr>
+        <tr>
+            <td>Guadalajara</td>
+            <td>4.1 millones</td>
+        </tr>
+        <tr>
+            <td>Monterrey</td>
+            <td>3.9 millones</td>
+        </tr>
+    </table>
+</body> <!-- Cierre del cuerpo del documento -->
+</html> <!-- Cierre definitivo del documento HTML -->
