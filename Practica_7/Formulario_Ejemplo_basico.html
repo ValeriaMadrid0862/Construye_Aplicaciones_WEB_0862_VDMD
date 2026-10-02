@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Formularios en HTML Ejemplo_Basico</title>
+<!-- Libreria de iconos en linea -->
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-
+awesome/7.3.1/css/all.min.css">
+
+</head>
+<body>
+
+<h1>Formularios</h1>
+<p>Un formulario permite al visitante cargar datos y que sean enviados al servidor.</p>
+<p>El HTML no tiene la responsabilidad de registrar los datos en el servidor,
+esta actividad se delega a traves de un lenguaje que se ejecute en el servidor (PHP,
+ASP, ASP.NET, Node, etc.)
+</p>
+
+<!--Subtitulo "h2"-->
+<h2>Ejemplo basico</h2>
+<!--Indica que es un formulario e action indica a donde enviarlo en este caso esta vacio y post es la manera en que se va a enviar-->
+<form action="" method="post">
+Ingresa tu nombre:
+<!--Indica que tipo de dato es y name es lo que sale en gris para que sepa que va a poner y size es el limited de caracter -->
+<input type="text" name="nombre" size="20">
+<br>
+<!--Indica que el control es un botón funcional de envío submit es la funcion de enviar y vaciar formulario-->
+<input type="submit" value="enviar">
+<!--Cierra el formulario-->
+</form>
+
+</body>
+</html>
