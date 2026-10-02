@@ -6,29 +6,32 @@
 <title>Formularios en HTML Ejemplo_Basico</title>
 <!-- Libreria de iconos en linea -->
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-
-awesome/7.3.1/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
 
 </head>
 <body>
 
 <!--Subtitulo "h2"-->
 <h2>Formulario con text area</h2>
+<!--Indica que es un formulario e action indica a donde enviarlo en este caso esta vacio para enviarlo a la misma pagina y post es la manera en que se va a enviar-->
 <form action="" method="post">
 Ingresa tu nombre:
+<!--Indica que tipo de dato es texto y name es el nombre del dato que se le manda al servidor-->
 <input type="text" name="nombre">
 <br>
 Ingresa tu correo:
-<!--"Type" Indica que el tipo de variable va a ser en formato email-->
+<!--Type Indica que el tipo de dato va a ser en formato email y name es la clave para el servidor-->
 <input type="email" name="correo">
 <br>
 Ingresa tus comentarios:
-<!--"Textarea" es una etiqueta que permite el almecenamiento de textos largos "name" es la guia que aparece 
-en gris "row" indica la media de altura del espacio para escribir y "cols" indica la media del ancho del espacio para escribir-->
+<!--Textarea es una etiqueta que permite escribir textos largos name es el nombre del dato para el servidor rows indica la cantidad de filas de alto y cols indica la cantidad de columnas de ancho-->
 <textarea name="comentarios" rows="1" cols="10"></textarea>
 <br>
+<!--Indica que el control es un boton funcional de envio submit es la funcion de enviar los datos cargados al servidor-->
 <input type="submit" value="enviar">
+<!--Indica que el boton es de reinicio es decir al presionarlo borra los datos y lo regresa a como estaba antes-->
 <input type="reset" value="borrar">
+<!--Cierra el formulario-->
 </form>
 
 </body>
