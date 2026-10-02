@@ -6,21 +6,26 @@
 <title>Formularios en HTML Ejemplo_Basico</title>
 <!-- Libreria de iconos en linea -->
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-
-awesome/7.3.1/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
 
 </head>
 <body>
- 
+
 <!--Subtitulo "h2"-->
 <h2>Formulario con campos ocultos</h2>
+<!--Indica que es un formulario e action indica a donde enviarlo en este caso esta vacio para enviarlo a la misma pagina y post es la manera en que se va a enviar-->
 <form action="" method="post">
+<!--type=hidden indica que es un campo invisible para el usuario que guarda informacion interna como name y value para enviarla directo al servidor-->
 <input type="hidden" name="hora" value="3:30">
 Ingresa tu nombre:
+<!--Indica que tipo de dato es texto y name es el nombre del dato que se le manda al servidor-->
 <input type="text" name="nombre">
 <br>
+<!--button crea un boton personalizado que permite meter iconos adentro type=submit cumple la funcion de enviar los datos al servidor-->
 <button type="submit">Enviar <i class="fa-regular fa-paper-plane"></i> </button>
+<!--type=reset cumple la funcion de borrar los datos y reiniciar el formulario a como estaba antes-->
 <button type="reset">Borrar <i class="fa fa-trash"></i></button>
+<!--Cierra el formulario-->
 </form>
 
 </body>

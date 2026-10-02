@@ -6,25 +6,32 @@
 <title>Formularios en HTML Ejemplo_Basico</title>
 <!-- Libreria de iconos en linea -->
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-
-awesome/7.3.1/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
 
 </head>
 <body>
 
 <!--Subtitulo "h2"-->
 <h2>Formularios con agrupamiento</h2>
-<form action="" method="post">
+<!--Indica que es un formulario action indica a donde enviarlo post la forma de envio y enctype multipart/form-data es obligatorio para enviar los archivos adjuntos-->
+<form action="" method="post" enctype="multipart/form-data">
+
+<!--fieldset crea un recuadro o caja para agrupar varios elementos relacionados del formulario-->
 <fieldset>
+<!--legend es el titulo que se muestra en el borde superior de la caja de agrupamiento-->
 <legend>Datos personales</legend>
 Nombre y apellido:
+<!--Indica que tipo de dato es texto y name es el nombre del dato que se le manda al servidor-->
 <input type="text" name="nombre_apellido"><br>
 Documento valido:
+<!--type=file genera el boton para adjuntar un archivo del equipo-->
 <input type="file" name="documento"><br>
 Fecha de nacimiento:
-
+<!--type=date muestra un calendario interactivo para que el usuario seleccione la fecha-->
 <input type="date" name="fecha_nacimiento">
 </fieldset>
+
+<!--fieldset crea otro grupo para separar secciones del formulario-->
 <fieldset>
 <legend>Datos de estudio:</legend>
 Nombre de la escuela:
@@ -35,8 +42,12 @@ Fecha de egreso:
 <input type="date" name="fecha_egreso">
 </fieldset>
 <br>
+
+<!--button crea un boton funcional que permite incluir texto e iconos adentro y type=submit realiza la funcion de enviar los datos al servidor-->
 <button type="submit">Enviar <i class="fa-regular fa-paper-plane"></i> </button>
+<!--type=reset realiza la funcion de borrar la informacion y reiniciar el formulario a como estaba antes-->
 <button type="reset">Borrar <i class="fa fa-trash"></i></button>
+<!--Cierra el formulario-->
 </form>
 
 </body>

@@ -6,23 +6,28 @@
 <title>Formularios en HTML Ejemplo_Basico</title>
 <!-- Libreria de iconos en linea -->
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-
-awesome/7.3.1/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
 
 </head>
 <body>
 
 <!--Subtitulo "h2"-->
 <h2>Formulario con archivos</h2>
-<form action="" method="post">
+<!--Indica que es un formulario action indica a donde enviarlo post la forma de envio y enctype multipart/form-data es obligatorio para que permita subir archivos al servidor-->
+<form action="" method="post" enctype="multipart/form-data">
 
 Ingresa tu nombre:
+<!--Indica que tipo de dato es texto y name es el nombre del dato que se le manda al servidor-->
 <input type="text" name="nombre">
 <br>
+<!--type=file genera un boton para adjuntar o seleccionar un archivo del equipo y name es la clave para el servidor-->
 <input type="file" name="archivo">
 <br>
+<!--button crea un boton funcional que permite incluir texto e iconos adentro y type=submit realiza la funcion de enviar los datos al servidor-->
 <button type="submit">Enviar <i class="fa-regular fa-paper-plane"></i> </button>
+<!--type=reset realiza la funcion de borrar la informacion y reiniciar el formulario a como estaba antes-->
 <button type="reset">Borrar <i class="fa fa-trash"></i></button>
+<!--Cierra el formulario-->
 </form>
 
 </body>
