@@ -6,26 +6,33 @@
 <title>Formularios en HTML Ejemplo_Basico</title>
 <!-- Libreria de iconos en linea -->
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-
-awesome/7.3.1/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/awesome/7.3.1/css/all.min.css">
 
 </head>
 <body>
 
 <!--Subtitulo "h2"-->
 <h2>Formularios con checkbox</h2>
+<!--Indica que es un formulario e action indica a donde enviarlo en este caso esta vacio para enviarlo a la misma pagina y post es la manera en que se va a enviar-->
 <form action="" method="post">
 Ingresa tu nombre:
+<!--Indica que tipo de dato es texto y name es el nombre del dato que se le manda al servidor-->
 <input type="text" name="nombre">
 <br>
 Selecciona los lenguajes que conozcas:
 <br>
-<!--Define una casilla cuadrada que el usuario puede marcar (activar) o desmarcar con un clic 
-y a diferencia del de las opciones multiples en este puedes seleccionar varios al mismo tiempo-->
-<input type="checkbox" name="Java">Java <br>
-<input type="checkbox" name="Python"> Python <br>
-<input type="checkbox" name="C#">C# <br>
-<input type="checkbox" name="Flutter"> Flutter <br>
+<!--type=checkbox define una casilla cuadrada que se puede activar o desmarcar pudiendo seleccionar varios al mismo tiempo name es el grupo y value es el dato que recibe el servidor-->
+<input type="checkbox" name="lenguajes" value="Java"> Java <br>
+<input type="checkbox" name="lenguajes" value="Python"> Python <br>
+<input type="checkbox" name="lenguajes" value="C#"> C# <br>
+<input type="checkbox" name="lenguajes" value="Flutter"> Flutter <br>
+
+<br>
+<!--Indica que el control es un boton funcional de envio submit es la funcion de enviar los datos cargados al servidor-->
+<input type="submit" value="enviar">
+<!--Indica que el boton es de reinicio es decir al presionarlo borra los datos y lo regresa a como estaba antes-->
+<input type="reset" value="borrar">
+<!--Cierra el formulario-->
 </form>
 
 </body>
