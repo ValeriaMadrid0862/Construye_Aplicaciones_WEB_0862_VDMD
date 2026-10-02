@@ -6,21 +6,22 @@
 <title>Formularios en HTML Ejemplo_Basico</title>
 <!-- Libreria de iconos en linea -->
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-
-awesome/7.3.1/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/awesome/7.3.1/css/all.min.css">
 
 </head>
 <body>
 
 <!--Subtitulo "h2"-->
 <h2>Formularios con seleccion</h2>
+<!--Indica que es un formulario e action indica a donde enviarlo en este caso esta vacio para enviarlo a la misma pagina y post es la manera en que se va a enviar-->
 <form action="" method="post">
 Ingresa tu nombre:
+<!--Indica que tipo de dato es texto y name es el nombre del dato que se le manda al servidor-->
 <input type="text" name="nombre">
 
 <br>
 Selecciona tu pais:
-<!--Es lo que sale al usuario -->
+<!--Select crea la lista desplegable name es el nombre del dato para el servidor y option son las opciones donde value es el valor que se manda y el texto es lo que sale al usuario-->
 <select name="pais">
 <option value="1">Argentina</option>
 <option value="2">España</option>
@@ -32,8 +33,11 @@ Selecciona tu pais:
 <option value="8">Colombia</option>
 </select>
 <br>
+<!--Indica que el control es un boton funcional de envio submit es la funcion de enviar los datos cargados al servidor-->
 <input type="submit" value="enviar">
+<!--Indica que el boton es de reinicio es decir al presionarlo borra los datos y lo regresa a como estaba antes-->
 <input type="reset" value="borrar">
+<!--Cierra el formulario-->
 </form>
 
 </body>
