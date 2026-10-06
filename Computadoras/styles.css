@@ -1,0 +1,87 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 20px;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+h1, h2 {
+    text-align: center;
+    color: #333;
+    margin: 0;
+}
+
+.btn-toggle {
+    background-color: #1b64a0;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 14px;
+    transition: background-color 0.2s;
+}
+
+.btn-toggle:hover {
+    background-color: #144d7a;
+}
+
+/* Menú de navegación */
+nav {
+    background-color: #333;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+nav li {
+    display: inline;
+    margin: 0 15px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+/* Tarjetas de servicios/productos */
+.tarjetas {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    width: 280px;
+    display: inline-block;
+    margin: 2px;
+    padding: 15px;
+    vertical-align: top;
+    text-align: center;
+    box-shadow: 2px 2px 5px rgba(7, 7, 7, 0.1);
+}
+
+.tarjetas img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Menú en línea horizontal */
+nav li {
+    display: inline;
+    margin-right: 15px;
+}
+
+
+footer {
+    background: #333;
+    text-align: center; 
+    padding: 1.5rem; 
+    border-top: 4px solid var(--verde); 
+    margin-top: 3rem; 
+  }
