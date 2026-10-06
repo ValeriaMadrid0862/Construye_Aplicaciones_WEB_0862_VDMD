@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sitio web de Soporte de Computadoras</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header class="header-container">
+        <h1>Soporte de Computadoras</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Computadoras</a></li>
+            <li>Impresoras</a></li>
+            <li>Tablets</a></li>
+            <li><a href="Contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+
+
+        <h1>Contactos / Formulario</h1>
+
+        <form id="form-soporte" action="" method="post">
+            <fieldset>
+                <legend>Información del Servicio</legend>
+
+                <p>
+                    <label for="tipo_equipo" class="titulo-campo">1. Tipo de dispositivo:</label>
+                    <select id="tipo_equipo" name="TipoEquipo" required>
+                        <option value="">-- Selecciona una opción --</option>
+                        <option value="laptop">Computadora Portátil (Laptop)</option>
+                        <option value="escritorio">Computadora de Escritorio (PC)</option>
+                        <option value="all_in_one">All-in-One (Todo en uno)</option>
+                        <option value="servidor">Servidor</option>
+                    </select>
+                </p>
+
+                <p>
+                    <span class="titulo-campo">2. Prioridad de la reparación:</span>
+                    <label class="opcion-grupo">
+                        <input type="radio" name="prioridad" value="baja" checked> Baja (Respuesta en 48 hrs)
+                    </label>
+                    <label class="opcion-grupo">
+                        <input type="radio" name="prioridad" value="media"> Media (Respuesta en 24 hrs)
+                    </label>
+                    <label class="opcion-grupo">
+                        <input type="radio" name="prioridad" value="alta"> Alta / Urgente (Respuesta el mismo día)
+                    </label>
+                </p>
+
+                <p>
+                    <span class="titulo-campo">3. Elementos que entregas con el equipo:</span>
+                    <label class="opcion-grupo">
+                        <input type="checkbox" name="accesorios[]" value="cargador"> Cargador / Adaptador de corriente
+                    </label>
+                    <label class="opcion-grupo">
+                        <input type="checkbox" name="accesorios[]" value="funda"> Funda o Maletín
+                    </label>
+                    <label class="opcion-grupo">
+                        <input type="checkbox" name="accesorios[]" value="disco_externo"> Disco Duro Externo
+                    </label>
+                    <label class="opcion-grupo">
+                        <input type="checkbox" name="accesorios[]" value="perifericos"> Mouse / Teclado
+                    </label>
+                </p>
+            </fieldset>
+
+            <fieldset>
+                <legend>Detalles del Equipo y Contacto</legend>
+
+                <p>
+                    <label for="antiguedad" class="titulo-campo">4. Antigüedad del equipo en años (Limitación 0 min/15 max):</label>
+                    <input type="number" id="antiguedad" name="Antiguedad" min="0" max="15" placeholder="Entre 0 y 15 años">
+                </p>
+
+                <p>
+                    <label for="telefono" class="titulo-campo">5. Teléfono de contacto (Limitado a 10 dígitos exactamente):</label>
+                    <input type="tel" id="telefono" name="Telefono" maxlength="10" pattern="[0-9]{10}" placeholder="Ej. 5512345678" required>
+                </p>
+
+                <p>
+                    <label for="codigo_serie" class="titulo-campo">6. Código/Número de Serie (Limitado a máximo 12 caracteres):</label>
+                    <input type="text" id="codigo_serie" name="CodigoSerie" maxlength="12" placeholder="Máximo 12 caracteres">
+                </p>
+
+                <p>
+                    <input type="submit" value="Enviar Solicitud">
+                    <input type="reset" value="Borrar">
+                </p>
+            </fieldset>
+        </form>
+
+    <footer>
+        <p>Elaborado por: Valeria Dayana Madrid de la Cruz | Grupo:5°J | No.Control: 24308051280862</p>
+    </footer>
+
+</body>
+</html>
