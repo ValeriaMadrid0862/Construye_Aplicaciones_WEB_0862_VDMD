@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sitio web de Soporte de Computadoras</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="header-container">
+        <h1>Soporte de Computadoras</h1>
+   </div>
+    
+    <nav>
+        <li><a href="index.html">Computadoras</a></li>
+        <li>Impresoras</li>
+        <li>Tablets</li>
+        <li><a href="Contactos.html">Contacto</a></li>
+   </nav>
+
+    <h2>MODELOS DE COMPUTADORAS</h2>
+
+    <div class="tarjetas">
+        <img src="Modelo_1.jpg" alt="Dell XPS 13">
+        <p><strong>Dell XPS 13</strong> Contamos con elementos de repuesto como pantallas InfinityEdge, baterías de alta duración y cargadores USB-C.</p>
+    </div>
+
+    <div class="tarjetas">
+        <img src="Modelo_2.jpg" alt="HP Pavilion 15">
+        <p><strong>HP Pavilion 15</strong> Contamos con elementos de repuesto como memorias RAM DDR4, discos de estado sólido y ventiladores.</p>
+    </div>+
+
+    <div class="tarjetas">
+        <img src="Modelo_3.jpg" alt="Lenovo ThinkPad X1">
+        <p><strong>Lenovo ThinkPad X1</strong> Contamos con elementos de repuesto como teclados TrackPoint, tarjetas madre y cargadores.</p>
+    </div>
+
+    <div class="tarjetas">
+        <img src="Modelo_4.jpg" alt="ASUS ROG Strix G15">
+        <p><strong>ASUS ROG Strix G15</strong> Contamos con elementos de repuesto como módulos de refrigeración, pantallas de 144Hz y fuentes de poder.</p>
+    </div>
+
+    <div class="tarjetas">
+        <img src="Modelo_5.jpg" alt="Apple MacBook Pro 16">
+        <p><strong>Apple MacBook Pro 16</strong> Contamos con elementos de repuesto como pantallas Liquid Retina, trackpads y módulos de batería.</p>
+    </div>
+
+    <div class="tarjetas">
+        <img src="Modelo_6.jpg" alt="Acer Aspire 5">
+        <p><strong>Acer Aspire 5</strong> Contamos con elementos de repuesto como carcasas superiores, conectores de audio y teclados completos.</p>
+    </div>
+
+    <div class="tarjetas">
+        <img src="Modelo_7.jpg" alt="MSI GF63 Thin">
+        <p><strong>MSI GF63 Thin</strong> Contamos con elementos de repuesto como disipadores de cobre, altavoces internos y conectores de corriente.</p>
+    </div>
+
+    <div class="tarjetas">
+        <img src="Modelo_8.jpg" alt="Microsoft Surface 4">
+        <p><strong>Microsoft Surface 4</strong> Contamos con elementos de repuesto como pantallas táctiles, teclados y conectores Surface Connect.</p>
+    </div>
+
+    <div class="tarjetas">
+        <img src="Modelo_9.jpg" alt="Apple MacBook Air M2">
+        <p><strong>Apple MacBook Air M2</strong> Contamos con elementos de repuesto como puertos MagSafe 3, placas lógicas y sensores Touch ID.</p>
+    </div>
+
+    <div class="tarjetas">
+        <img src="Modelo_10.jpg" alt="HP Victus 16">
+        <p><strong>HP Victus 16</strong> Contamos con elementos de repuesto como ventiladores duales, memorias RAM DDR5 y cables flex de video.</p>
+    </div>
+
+    <div class="tarjetas">
+        <img src="Modelo_11.jpg" alt="Lenovo IdeaPad Slim 3">
+        <p><strong>Lenovo IdeaPad Slim 3</strong> Contamos con elementos de repuesto como cámaras web, baterías de polímero y bisagras reinforced.</p>
+    </div>
+
+    <div class="tarjetas">
+        <img src="Modelo_12.jpg" alt="Samsung Galaxy Book3 Pro">
+        <p><strong>Samsung Galaxy Book3 Pro</strong> Contamos con elementos de repuesto como pantallas Dynamic AMOLED 2X, baterías ultraligeras, puertos Thunderbolt 4 y teclados retroiluminados.</p>
+    </div>
+
+    <footer>
+        <p>Elaborado por: Valeria Dayana Madrid de la Cruz | Grupo:5°J | No.Control: 24308051280862</p>
+    </footer>
+
+</body>
+</html>
